@@ -276,11 +276,25 @@
 
     .hide {
         display: block;
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 90px;;
+        margin-top: 70px;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .cards {
+        margin-top: 30px;
     }
 
 }
 
-/* --Header-- */
+/* --Pagina-- */
 
 header {
     background-color: #5f9a54;
@@ -290,7 +304,7 @@ header {
     left: 0;
     z-index: 1030;
     height: 70px;
-    position: relative;
+    display: block;
 }
 
 header::after {
@@ -301,10 +315,10 @@ header::after {
 
 .logo {
     float: left;
-    padding: 13.5px 0;
+    padding: 10px 0;
     color: #fff;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 35px;
     margin-left: 6%;
 }
 
@@ -321,9 +335,38 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 14px; 
-    padding-top: 25px;
+    margin-left: 20px; 
+    padding-top: 20px;
     color: #fff;
+}
+
+.hamburguer {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 34px;
+    right: 32px;
+}
+
+.hamburguer::before {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    content: ' ';
+    display: block;
+}
+
+.hamburguer::after {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    content: ' ';
+    display: block;
 }
 
 .banner {
@@ -332,13 +375,15 @@ nav li {
     height: 400px;
     background-repeat: no-repeat;
     background-position:center;
+    position: relative;
+    margin-top: 70px;
 }
 
-.phrase {
-    font-size: 90px;
+h1 {
+    font-size: 70px;
     color: #5f9a54;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .btn {
@@ -353,12 +398,18 @@ nav li {
     cursor: pointer;
     text-decoration: none;
     display: block;
+    font-size: 18px;
   }
 
   .card {
       border: 2px solid #5f9a54;
       border-collapse: separate;
-      margin-bottom: 3px;
+      margin-bottom: 10%;
+  }
+
+  .contact {
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .card img {
@@ -366,5 +417,24 @@ nav li {
   }
 
   hr {
-    color: #5f9a54;  
+    border: 1px solid #5f9a54;  
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  footer {
+    background-color: #5f9a54;
+    color: #fff;
+    text-align: center;
+    height: 90px;
+    display: block;
+  }
+
+  footer p {
+    margin-top: 20px;
   }
